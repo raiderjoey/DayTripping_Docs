@@ -34,7 +34,7 @@
 <body>
 
 <h1>Privacy Policy for DayTripping</h1>
-<p class="updated"><strong>Last updated: June 19, 2026</strong></p>
+<p class="updated"><strong>Last updated: June 21, 2026</strong></p>
 
 <p>This Privacy Policy explains how Waltco (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) collects, uses, and shares information when you use the <strong>DayTripping</strong> mobile application (the &ldquo;App&rdquo;). DayTripping is a collaborative trip-planning app that lets you and the people you travel with organize trips, itineraries, proposals, and packing lists.</p>
 
@@ -49,7 +49,7 @@
 <p>We are the data controller for the personal information described below.</p>
 
 <h2>2. Information we collect</h2>
-<p>We only collect information that is needed to operate the App and to keep it stable. We do <strong>not</strong> use advertising networks or analytics SDKs, and we do <strong>not</strong> sell your data.</p>
+<p>We only collect information that is needed to operate the App, to keep it stable, and to understand how it is used so we can improve it. We use a privacy-preserving, first-party analytics service (see Section 2f). We do <strong>not</strong> use advertising networks, do <strong>not</strong> track you across other apps or websites, do <strong>not</strong> collect an advertising identifier, and do <strong>not</strong> sell your data.</p>
 
 <h3>a. Account information</h3>
 <p>When you create an account, we collect:</p>
@@ -86,6 +86,16 @@
 <h3>e. On-device cache</h3>
 <p>The App stores a copy of your trip data locally on your device so it can work offline. This cache is cleared when you sign out.</p>
 
+<h3>f. Usage and performance data</h3>
+<p>To understand how the App is used and to keep it fast and reliable, we use <strong>Firebase Analytics</strong> and <strong>Firebase Performance Monitoring</strong> (both Google services). These collect:</p>
+<ul>
+  <li><strong>Usage events</strong> &mdash; which screens you view and a small set of key in-app actions (for example, that a trip was created, a proposal was sent, or a packing item was added). We record only the <strong>type</strong> of action, never the content of your trips, itineraries, proposals, or packing lists. Screen names are generic (such as &ldquo;trip day view&rdquo;) and never include trip names, places, addresses, or other content you enter.</li>
+  <li><strong>Performance measurements</strong> &mdash; timings for key operations and standard app start and screen-rendering metrics, so we can find and fix slow or unreliable areas.</li>
+  <li><strong>Device and app information</strong> &mdash; such as device model, operating system version, and app version.</li>
+  <li>An <strong>opaque user identifier</strong> (the same internal account ID described in Section 2d) so we can understand usage at the level of distinct users. This identifier is not your email and does not directly identify you; it is cleared when you sign out.</li>
+</ul>
+<p>We do <strong>not</strong> collect an advertising identifier, and this data is <strong>not</strong> used for advertising or to track you across other apps or websites. Usage and performance collection is <strong>disabled during development</strong> and only operates in released versions of the App.</p>
+
 <h2>3. Device permissions</h2>
 <p>DayTripping requests only one device permission:</p>
 <ul>
@@ -101,6 +111,8 @@
   <li>Share trip content with the people you choose to plan trips with.</li>
   <li>Send you push notifications about activity in your trips (if enabled).</li>
   <li>Diagnose crashes and fix bugs so the App stays stable and reliable.</li>
+  <li>Understand which features are used so we can improve the App.</li>
+  <li>Monitor and improve the App&rsquo;s performance and reliability.</li>
   <li>Maintain the security and integrity of the service.</li>
 </ul>
 <p>We do <strong>not</strong> use your information for advertising, profiling, or automated decision-making.</p>
@@ -116,11 +128,11 @@
 <h2>6. Third-party service providers</h2>
 <p>We rely on a small number of service providers (&ldquo;sub-processors&rdquo;) to run the App. We share information with them only as needed to provide the service:</p>
 <ul>
-  <li><strong>Google Firebase</strong> (Google LLC) &mdash; provides authentication, the cloud database where your account and trip content are stored, the cloud functions that send notifications, and <strong>Firebase Crashlytics</strong> for crash reporting (see Section 2d). See Google&rsquo;s Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and Firebase&rsquo;s privacy and security information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Google Firebase</strong> (Google LLC) &mdash; provides authentication, the cloud database where your account and trip content are stored, the cloud functions that send notifications, <strong>Firebase Crashlytics</strong> for crash reporting (see Section 2d), and <strong>Firebase Analytics</strong> and <strong>Firebase Performance Monitoring</strong> for product-usage analytics and performance measurement (see Section 2f). See Google&rsquo;s Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and Firebase&rsquo;s privacy and security information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</li>
   <li><strong>Expo push notification service</strong> (Expo / 650 Industries, Inc.) &mdash; delivers push notifications to your device. See: <a href="https://expo.dev/privacy">https://expo.dev/privacy</a>.</li>
 </ul>
 <p>These providers process your information on our behalf and are not permitted to use it for their own purposes beyond providing their service.</p>
-<p>We do <strong>not</strong> integrate any analytics or advertising SDKs.</p>
+<p>We use <strong>Firebase Analytics</strong> and <strong>Firebase Performance Monitoring</strong> (first-party services provided by Google as part of Firebase) for product analytics and performance measurement, with advertising-identifier collection disabled. We do <strong>not</strong> integrate advertising SDKs and do <strong>not</strong> use cross-app or cross-site tracking.</p>
 
 <h2>7. Where your data is stored</h2>
 <p>Your account and trip content are stored on Google Firebase&rsquo;s cloud infrastructure. This means your information may be processed and stored on servers located outside your country of residence, including in the United States. Where required by law, transfers of personal data are protected by appropriate safeguards provided by our service providers.</p>

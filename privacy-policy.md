@@ -1,6 +1,6 @@
 # Privacy Policy for DayTripping
 
-**Last updated: June 19, 2026**
+**Last updated: June 21, 2026**
 
 This Privacy Policy explains how Waltco ("we", "us", or "our") collects, uses,
 and shares information when you use the **DayTripping** mobile application (the
@@ -27,9 +27,12 @@ We are the data controller for the personal information described below.
 
 ## 2. Information we collect
 
-We only collect information that is needed to operate the App and to keep it
-stable. We do **not** use advertising networks or analytics SDKs, and we do
-**not** sell your data.
+We only collect information that is needed to operate the App, to keep it
+stable, and to understand how it is used so we can improve it. We use a
+privacy-preserving, first-party analytics service (see Section 2f). We do
+**not** use advertising networks, do **not** track you across other apps or
+websites, do **not** collect an advertising identifier, and do **not** sell
+your data.
 
 ### a. Account information
 When you create an account, we collect:
@@ -87,6 +90,32 @@ and only operates in released versions of the App.
 The App stores a copy of your trip data locally on your device so it can work
 offline. This cache is cleared when you sign out.
 
+### f. Usage and performance data
+To understand how the App is used and to keep it fast and reliable, we use
+**Firebase Analytics** and **Firebase Performance Monitoring** (both Google
+services). These collect:
+
+- **Usage events** — which screens you view and a small set of key in-app
+  actions (for example, that a trip was created, a proposal was sent, or a
+  packing item was added). We record only the **type** of action, never the
+  content of your trips, itineraries, proposals, or packing lists. Screen names
+  are generic (such as "trip day view") and never include trip names, places,
+  addresses, or other content you enter.
+- **Performance measurements** — timings for key operations and standard app
+  start and screen-rendering metrics, so we can find and fix slow or unreliable
+  areas.
+- **Device and app information** — such as device model, operating system
+  version, and app version.
+- An **opaque user identifier** (the same internal account ID described in
+  Section 2d) so we can understand usage at the level of distinct users. This
+  identifier is not your email and does not directly identify you; it is cleared
+  when you sign out.
+
+We do **not** collect an advertising identifier, and this data is **not** used
+for advertising or to track you across other apps or websites. Usage and
+performance collection is **disabled during development** and only operates in
+released versions of the App.
+
 ---
 
 ## 3. Device permissions
@@ -111,6 +140,8 @@ We use the information described above to:
 - Share trip content with the people you choose to plan trips with.
 - Send you push notifications about activity in your trips (if enabled).
 - Diagnose crashes and fix bugs so the App stays stable and reliable.
+- Understand which features are used so we can improve the App.
+- Monitor and improve the App's performance and reliability.
 - Maintain the security and integrity of the service.
 
 We do **not** use your information for advertising, profiling, or automated
@@ -144,8 +175,10 @@ App. We share information with them only as needed to provide the service:
 
 - **Google Firebase** (Google LLC) — provides authentication, the cloud database
   where your account and trip content are stored, the cloud functions that send
-  notifications, and **Firebase Crashlytics** for crash reporting (see Section
-  2d). See Google's Privacy Policy: <https://policies.google.com/privacy> and
+  notifications, **Firebase Crashlytics** for crash reporting (see Section 2d),
+  and **Firebase Analytics** and **Firebase Performance Monitoring** for product-
+  usage analytics and performance measurement (see Section 2f). See Google's
+  Privacy Policy: <https://policies.google.com/privacy> and
   Firebase's privacy and security information:
   <https://firebase.google.com/support/privacy>.
 - **Expo push notification service** (Expo / 650 Industries, Inc.) — delivers
@@ -155,7 +188,11 @@ App. We share information with them only as needed to provide the service:
 These providers process your information on our behalf and are not permitted to
 use it for their own purposes beyond providing their service.
 
-We do **not** integrate any analytics or advertising SDKs.
+We use **Firebase Analytics** and **Firebase Performance Monitoring** (first-
+party services provided by Google as part of Firebase) for product analytics and
+performance measurement, with advertising-identifier collection disabled. We do
+**not** integrate advertising SDKs and do **not** use cross-app or cross-site
+tracking.
 
 ---
 
